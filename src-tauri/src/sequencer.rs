@@ -20,7 +20,7 @@ pub fn play_audio() -> Result<(), Box<dyn std::error::Error>> {
     manager.play(sound_data_2)?;
     clock.start();
 
-    std::thread::sleep(std::time::Duration::from_millis(1000000000));
+    std::thread::sleep(std::time::Duration::from_millis(10000));
 
     Ok(())
 }
